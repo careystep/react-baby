@@ -1,0 +1,12 @@
+.car-btn {
+    box-sizing: border-box;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    bottom: 100px;
+    right: 30px;
+    border-radius: 50%;
+    background: #108ee9;
+}

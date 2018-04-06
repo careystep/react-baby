@@ -1,0 +1,70 @@
+.sub-page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+}
+.comments-cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.comments-cont .comments-flex-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.comments-cont .page-tabs-nav-wrap{
+    height: 45px;
+    flex: 0 0 45px;
+}
+.comments-cont .from-me-item .am-list-line .am-list-content{
+    text-align: right;
+}
+.comments-cont .am-list-item .am-list-line .am-list-extra{
+    flex-basis: 35px;
+}
+.comments-cont .page-tabs-content-wrap {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.comments-cont .page-tabs-tab-wrap {
+    border-top: 1px solid #eee;
+    height: 44px;
+    flex: 0 0 44px;
+}
+.comments-cont  .am-card-header-content > img {
+    width: 64px;
+    height: 64px;
+}
+
+.slide-enter {
+    opacity: 0;
+    transform: translate3d(100%,0,0);
+    z-index: 1;
+}
+
+.slide-enter.slide-enter-active {
+    opacity: 1;
+    transform: translate3d(0%,0,0);
+    transition: all 300ms ease-in;
+}
+
+.slide-exit {
+    transform: translate3d(0%,0,0);
+}
+
+.slide-exit.slide-exit-active {
+    transform: translate3d(100%,0,0);
+    transition: all 300ms ease-in;
+}

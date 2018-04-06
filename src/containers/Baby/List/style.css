@@ -1,0 +1,107 @@
+.baby-list {
+ padding: 0;
+ margin: 0;
+}
+.baby-list > li {
+    padding: 0 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.baby-list .header{
+    padding: 5px 0;
+    height: 40px;
+}
+
+.baby-list .header .user-pic {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    float: left;
+}
+
+.baby-list .header .info {
+    margin-left: 50px;
+}
+.baby-list .header .info p {
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+}
+.baby-list > li .title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.baby-list > li .image-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.baby-list > li .image-list2,.baby-list > li .image-list3{
+    justify-content: space-between;
+
+}
+.baby-list > li .image-box {
+    position: relative;
+    overflow: hidden;
+}
+.baby-list > li .image-box:before {
+    display: block;
+    width: 1px;
+    content: '';
+    padding-top: 100%;
+}
+.baby-list > li .image-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.baby-list > li .image-content img{
+    width: 100%;
+    height: 100%;
+}
+.baby-list > li .image-list .image-box{
+    width: 75%;
+    margin-bottom: 1.5%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.baby-list > li .image-list2 .image-box{
+    width: 49%;
+    margin-bottom: 2%;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.baby-list > li .image-list3 .image-box{
+    width: 32%;
+    margin-bottom: 1.5%;
+}
+
+.baby-list > li .command{
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.baby-list > li .command > .idx-num {
+    color: #666;
+}
+.baby-list > li .command .icon-heart {
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin:0 6px;
+    background: yellow;
+    text-align: center;
+    line-height: 30px;
+}
+.baby-list > li .command .icon-heart.has {
+    background: red;
+}
